@@ -1,12 +1,12 @@
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import React from "react";
+import { StyleSheet, View } from "react-native";
 
-import TimerButton from './TimerButton';
-import TimerForm from './TimerForm';
+import TimerButton from "./TimerButton";
+import TimerForm from "./TimerForm";
 
 export default class ToggleableTimerForm extends React.Component {
   state = {
-    isOpen: false,
+    isOpen: false
   };
 
   handleFormOpen = () => {
@@ -44,9 +44,9 @@ export default class ToggleableTimerForm extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 10,
+    paddingVertical: 10
   },
   buttonPadding: {
-    paddingHorizontal: 15,
-  },
+    paddingHorizontal: 15
+  }
 });
