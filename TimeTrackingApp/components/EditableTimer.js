@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-import TimerForm from './TimerForm';
-import Timer from './Timer';
+import TimerForm from "./TimerForm";
+import Timer from "./Timer";
 
 export default class EditableTimer extends React.Component {
   state = {
-    editFormOpen: false,
+    editFormOpen: false
   };
 
   handleEditPress = () => {
@@ -39,6 +39,8 @@ export default class EditableTimer extends React.Component {
       elapsed,
       isRunning,
       onRemovePress,
+      onStartPress,
+      onStopPress
     } = this.props;
     const { editFormOpen } = this.state;
 
@@ -62,6 +64,8 @@ export default class EditableTimer extends React.Component {
         isRunning={isRunning}
         onEditPress={this.handleEditPress}
         onRemovePress={onRemovePress}
+        onStartPress={onStartPress}
+        onStopPress={onStopPress}
       />
     );
   }
